@@ -1,0 +1,14 @@
+package ExceptionHandling;
+class ArithmeticTest{
+	public static void divison(int num1,int num2) {
+		try {
+			int num1,num2;
+			float result=num1/num2;
+			System.out.println("Division:"+result);
+		}
+	}
+}
+
+public class ExceptionHandlingExamp1 {
+
+}

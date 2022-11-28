@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;features.Predicate.java&apos; to &apos;PredicateExample.java&apos;&#x0D;&#x0A;- Original project: &apos;FunctionalInterface_1411&apos;&#x0D;&#x0A;- Original element: &apos;features.Predicate.java&apos;&#x0D;&#x0A;- Renamed element: &apos;features.PredicateExample.java&apos;" description="Rename compilation unit &apos;Predicate.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;features{Predicate.java" name="PredicateExample.java" references="false" stamp="1668417385814" version="1.0"/>
+</session>

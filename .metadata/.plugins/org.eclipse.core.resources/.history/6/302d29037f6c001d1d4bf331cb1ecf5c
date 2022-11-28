@@ -1,0 +1,18 @@
+import java.sql.CallableStatement;
+import java.sql.Connection;
+import java.sql.SQLException;
+
+/*Callable Statement*/
+public class Demo4_2511 {
+	public static void main(String[] args) throws ClassNotFoundException, SQLException {
+		Connection con=MyConnection2.getConnection();
+		CallableStatement callable=con.prepareCall("{call getGrade(?,?,?) }");
+		callable.setInt(1, 3);
+		callable.registerOutParameter(2, java.sql.Types.VARCHAR);
+		callable.executeUpdate();
+		String holderType=callable.getString(2);
+		System.out.println(holderType);
+		
+		
+	}
+}

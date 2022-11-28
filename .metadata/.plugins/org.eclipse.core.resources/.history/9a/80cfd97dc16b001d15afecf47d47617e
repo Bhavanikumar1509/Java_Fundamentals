@@ -1,0 +1,20 @@
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+public class Demo3 {
+	public static void main(String[] args) throws ClassNotFoundException, SQLException {
+		Connection con=MyConnection2.getConnection();
+		System.out.println("connection Established...");
+		String sqlInsert="insert into user values(?,?)";
+		PreparedStatement pst=con.prepareCall(sqlInsert);
+		
+		pst.setString(1, );
+		pst.setString(2, );
+		pst.executeUpdate();
+		pst.clearParameters();
+		con.close();
+		
+	}
+
+}

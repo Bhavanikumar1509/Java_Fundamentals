@@ -1,0 +1,14 @@
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+public class Demo5 {
+	public static void main(String[] args) throws ClassNotFoundException, SQLException {
+		Connection con=MyConnection2.getConnection();
+		Statement st=con.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE,)
+		
+		
+	}
+
+}
+

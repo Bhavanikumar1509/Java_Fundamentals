@@ -1,0 +1,7 @@
+/*Callable Statement*/
+public class Demo4_2511 {
+	public static void main(String[] args) {
+		Connection con=MyConnection2.getConnection();
+		
+	}
+}

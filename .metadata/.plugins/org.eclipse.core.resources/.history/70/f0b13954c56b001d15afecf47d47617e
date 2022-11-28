@@ -1,0 +1,25 @@
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.util.Scanner;
+
+public class Demo2 {
+	public static void main(String[] args) throws ClassNotFoundException, SQLException {
+		Scanner sc=new Scanner(System.in);
+		Connection con=MyConnection.getConnection();
+		String sqlInsert="insert into user values(?,?)";
+		for(int i=1;i<=3;i++) {
+			for(int j=1;j<=2;j++) {
+			PreparedStatement pst=con.prepareCall(sqlInsert);
+			System.out.print("Enter the Firstname:");
+			String firstname=sc.next();
+			System.out.print("Enter the Lastname:");
+			String lastname=sc.next();
+			pst.setString(j, firstname);
+			pst.setString(j+1, lastname);
+		
+	}
+
+}
+	}
+}

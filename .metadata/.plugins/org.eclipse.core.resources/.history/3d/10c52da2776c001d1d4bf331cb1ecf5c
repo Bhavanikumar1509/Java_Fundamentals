@@ -1,0 +1,17 @@
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class ResultSetMetaData {
+	public static void main(String[] args) throws ClassNotFoundException, SQLException {
+		Connection con=MyConnection2.getConnection();
+		Statement st=con.createStatement();
+		ResultSet rs=st.executeQuery("select * from student");
+		ResultSetMetaData rsmetadata=rs.getMetaData();
+		System.out.println(rsmetadata.getColumn);
+		
+		
+	}
+
+}

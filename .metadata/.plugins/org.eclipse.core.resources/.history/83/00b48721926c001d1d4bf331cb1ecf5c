@@ -1,0 +1,39 @@
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.util.Scanner;
+
+public class batch {
+	public static void main(String[] args) throws ClassNotFoundException, SQLException {
+		Scanner sc=new Scanner(System.in);
+		Connection con=MyConnection2.getConnection();
+		PreparedStatement pst=con.prepareStatement("insert into user values(?,?)");
+		con.setAutoCommit(false);
+		System.out.print("Enter number of rows :");
+		int n=sc.nextInt();
+		try {
+			for(int i=0;i<n;i++) {
+			System.out.print("enter FirstName:");
+			String firstname=sc.next();
+			pst.setString(1, firstname);
+			System.out.print("enter lastname:");
+			String lastname=sc.next();
+			pst.setString(2, lastname);
+			pst.addBatch();
+		}
+		con.commit();
+		}catch (Exception e) {
+			System.out.println(e.getMessage());
+		}
+		
+		
+		int[] results=pst.executeBatch();
+		for(int x:results) {
+			System.out.println(x);
+		}
+		System.out.println("Records added sucessfully");
+		
+		
+	}
+
+}

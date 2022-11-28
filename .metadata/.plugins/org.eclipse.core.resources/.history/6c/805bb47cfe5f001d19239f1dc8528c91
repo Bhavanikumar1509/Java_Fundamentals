@@ -1,0 +1,20 @@
+package StackS;
+/**
+ * LIFO
+ * used in:
+ * implementation of undo
+ * syntax checking
+ * evaulate expressions
+ * build navigation
+ * 
+ * operations
+ * push-->Add item to the stack
+ * pop-->remove item from the stack
+ * peek-->retuns the item which is ready to pop
+ * is empty--checks is empty or not
+ * 
+ * **/
+
+public class stackExample {
+
+}

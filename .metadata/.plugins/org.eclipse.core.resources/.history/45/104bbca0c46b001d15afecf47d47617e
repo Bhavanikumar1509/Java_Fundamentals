@@ -1,0 +1,45 @@
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.*;
+
+public class Demo3 {
+	public static void main(String[] args) throws ClassNotFoundException, SQLException {
+		Scanner sc=new Scanner(System.in);
+		Connection con=MyConnection2.getConnection();
+		System.out.println("connection Established...");
+		Statement st=con.createStatement();
+		try {
+			String sqlCreate="create table user1(firstname text,lastname text)";
+			boolean status=st.execute(sqlCreate);
+			System.out.println(status);
+			System.out.println("created  the table");
+		}catch (Exception e) {
+			System.out.println("table is already Exist with same name...");
+		}
+		
+		
+		String sqlInsert="insert into user values(?,?)";
+		for(int i=1;i<=3;i++) {
+			for(int j=1;j<=2;j++) {
+			PreparedStatement pst=con.prepareCall(sqlInsert);
+			String firstname=sc.nextLine()
+			
+		}
+		}
+		try {
+			String sqldrop="drop table user1";
+			boolean status1=st.execute(sqldrop);
+			System.out.println(status1);
+			System.out.println("dropped   the table");
+		}catch (Exception e) {
+			System.out.println("No table exists...");
+		}
+		
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,13 @@
+package Test;
+
+import java.util.*;
+import java.io.*;
+public class Test{
+	public static void main(String[] args) {
+		
+		char[] loc= {'a','b','c'};
+		String loc1=new String(loc);
+		System.out.println(loc1,0,1);
+		}
+	
+}

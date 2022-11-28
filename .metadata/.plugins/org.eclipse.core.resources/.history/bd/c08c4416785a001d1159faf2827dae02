@@ -1,0 +1,20 @@
+package Map_Collections;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Map_Example {
+public static void main(String[] args) {
+	Map<Integer,String>mapData=new HashMap<Integer,String>();
+	mapData.put(1, "Apple");
+	mapData.put(2, "Box");
+	mapData.put(3, "Cat");
+	mapData.put(4, "Dog");
+	System.out.println(mapData);
+	mapData.put(3, "hello");
+	System.out.println(mapData);
+	mapData.putIfAbsent(5, "dogger");//puts only if key is absent
+	System.out.println("empty or not:"+mapData.isEmpty());
+	System.out.println("Size:"+mapData.size());
+}
+}

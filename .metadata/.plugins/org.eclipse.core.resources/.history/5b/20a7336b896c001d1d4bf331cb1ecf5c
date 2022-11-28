@@ -1,0 +1,20 @@
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class Demo5 {
+	public static void main(String[] args) throws ClassNotFoundException, SQLException {
+		Connection con=MyConnection2.getConnection();
+		Statement st=con.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE,ResultSet.CONCUR_UPDATABLE);
+		ResultSet rs=st.executeQuery("select * from employees");
+		while(rs.next()) {
+			System.out.println(rs.getInt(1)+" "+rs.getString(2)+""+rs.getString(3));
+		}
+		while(rs.previous())
+		
+		
+	}
+
+}
+

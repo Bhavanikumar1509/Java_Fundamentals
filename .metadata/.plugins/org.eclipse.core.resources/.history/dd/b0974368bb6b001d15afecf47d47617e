@@ -1,0 +1,20 @@
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+public class Demo1 {
+	public static void main(String[] args) throws SQLException, ClassNotFoundException {
+		Class.forName("com.mysql.cj.jdbc.Driver");
+		String url="jdbc:mysql://localhost:3306/sampledb";
+		Connection con=DriverManager.getConnection(url,"root","897834");
+		System.out.println("connection Established...");
+		Statement st=con.createStatement();
+		ResultSet rs=st.executeQuery("select * from student");
+		while(rs.next()) {
+			System.out.println(rs.getInt("Sid")+"\t"+rs.getString("Sname")+"\t"+rs.getInt("marks"));
+		}		
+		
+	}
+
+}

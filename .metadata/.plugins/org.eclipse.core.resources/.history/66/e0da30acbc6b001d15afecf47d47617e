@@ -1,0 +1,28 @@
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+public class Demo1 {
+	public static void main(String[] args) throws SQLException, ClassNotFoundException {
+		Connection con=MyConnection.getConnection();
+		System.out.println("connection Established...");
+		Statement st=con.createStatement();
+//		ResultSet rs=st.executeQuery("select * from student");
+//		while(rs.next()) {
+//			System.out.println(rs.getInt("Sid")+"\t"+rs.getString("Sname")+"\t"+rs.getInt("marks"));
+//		}		
+//		
+//		String sqlInsert="insert into student values(1010,'king',34)";
+//		int rowsAffected=st.executeUpdate(sqlInsert);
+//		if(rowsAffected>0)
+//			System.out.println("record inserted sucessfully");
+//		else
+//			System.out.println("record not inserted");
+		String sqlCreate="create tablee user(username text,password text)";
+		boolean status=st.execute(sqlCreate);
+		System.out.println(status);
+		System.out.println("created  the table");
+	}
+
+}

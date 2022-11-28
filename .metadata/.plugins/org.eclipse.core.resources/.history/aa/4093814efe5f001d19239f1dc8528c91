@@ -1,0 +1,16 @@
+package StackS;
+/**
+ * LIFO
+ * used in:
+ * implementation of undo
+ * syntax checking
+ * evaulate expressions
+ * build navigation
+ * 
+ * operations
+ * 
+ * **/
+
+public class stackExample {
+
+}
