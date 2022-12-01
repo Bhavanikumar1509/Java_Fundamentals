@@ -1,0 +1,9 @@
+package com.beans;
+import org.springframework.context.ApplicationContext;
+public class TestCustomer {
+	public static void main(String[] args) {
+
+		
+	}
+
+}

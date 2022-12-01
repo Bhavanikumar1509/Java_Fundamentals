@@ -1,0 +1,20 @@
+package com.beans;
+
+
+public class Car {
+	int chasisno;
+	String make;
+	String color;
+	public Car(int chasisno, String make, String color) {
+		super();
+		this.chasisno = chasisno;
+		this.make = make;
+		this.color = color;
+	}
+	@Override
+	public String toString() {
+		return "Car [chasisno=" + chasisno + ", make=" + make + ", color=" + color + "]";
+	}
+	
+
+}

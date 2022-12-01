@@ -1,0 +1,13 @@
+package com.anno.beans;
+
+public class Customer {
+
+	private int customerId;
+	private String customerName;
+	
+	public Object getCustomerId() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

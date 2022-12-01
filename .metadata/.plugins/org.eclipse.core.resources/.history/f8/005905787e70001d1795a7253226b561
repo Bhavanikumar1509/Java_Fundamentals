@@ -1,0 +1,8 @@
+package com.beans2;
+
+public class LifeCycleBean {
+	public static void main(String[] args) {
+		
+	}
+
+}

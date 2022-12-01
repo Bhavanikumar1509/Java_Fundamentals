@@ -1,0 +1,13 @@
+package Intro;
+
+public class Employee {
+	int empId;
+	String empname;
+	public Employee(int empId, String empname) {
+		super();
+		this.empId = empId;
+		this.empname = empname;
+	}
+	
+
+}

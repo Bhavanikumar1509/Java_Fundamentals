@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.factory.CarFactory"/>
+    <fullyQualifiedTypeName name="com.beans.Customer"/>
+    <fullyQualifiedTypeName name="com.beans2.LibraryList"/>
+    <fullyQualifiedTypeName name="java.util.Set"/>
+    <fullyQualifiedTypeName name="com.beans2.LibrarySet"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="com.beans2.Libraryhash"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.BeanNameAware"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.BeanFactoryAware"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.InitializingBean"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.DisposableBean"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.BeanFactory"/>
+    <fullyQualifiedTypeName name="com.beans2.LifeCycleBean"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.config.BeanPostProcessor"/>
+    <fullyQualifiedTypeName name="org.springframework.context.support.AbstractApplicationContext"/>
+    <fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.ClassPathBeanDefinitionScanner"/>
+    <fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
+    <fullyQualifiedTypeName name="com.autowiring.beans.EmployeeBean"/>
+</qualifiedTypeNameHistroy>

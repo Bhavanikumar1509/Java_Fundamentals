@@ -1,0 +1,5 @@
+package com.autowiring.beans;
+
+public class TestAutowire {
+
+}

@@ -1,0 +1,8 @@
+package com.autowiring.beans;
+
+public class TestAutowire {
+	public static void main(String[] args) {
+	
+}
+
+}

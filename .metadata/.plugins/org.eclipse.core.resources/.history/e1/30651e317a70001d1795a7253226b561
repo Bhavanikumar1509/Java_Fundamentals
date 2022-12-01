@@ -1,0 +1,27 @@
+package com.beans2;
+
+import java.util.HashMap;
+
+public class Libraryhash {
+
+	private HashMap<String, Book>hm;
+
+	public Libraryhash() {
+	}
+
+	public HashMap<String, Book> getHm() {
+		return hm;
+	}
+
+	public void setHm(HashMap<String, Book> hm) {
+		this.hm = hm;
+	}
+	public void displayBooks() {
+		hm.forEach(key,value)->{
+			System.out.println("key is:"+key+"value is :"+value);
+		});
+			
+		}
+	}
+	
+}

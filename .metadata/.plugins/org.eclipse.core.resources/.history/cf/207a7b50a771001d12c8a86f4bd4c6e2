@@ -1,0 +1,44 @@
+
+Skip to content
+Pull requests
+Issues
+Codespaces
+Marketplace
+Explore
+@Bhavanikumar1509
+geetika-agarwal /
+Java-Fundamentals
+Public
+
+Code
+Issues
+Pull requests
+Actions
+Projects
+Security
+
+    Insights
+
+Java-Fundamentals/SpringWithSQLConnectivity/src/run/CustomerRun.java /
+@geetika-agarwal
+geetika-agarwal Spring and Database Connectivity using Annotations
+Latest commit a98b9b5 Dec 1, 2022
+History
+1 contributor
+37 lines (29 sloc) 1 KB
+package run;
+
+import java.util.List;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.anno.beans.Customer;
+import com.anno.beans.CustomerDAO;
+
+public class CustomerRun {
+	public static void main(String[] args) {
+		ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
+		CustomerDAO customerDao = (CustomerDAO) context.getBean("customerDAOImpl");
+	}
+}

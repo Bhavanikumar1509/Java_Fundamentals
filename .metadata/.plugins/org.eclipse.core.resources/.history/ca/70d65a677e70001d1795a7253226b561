@@ -1,0 +1,5 @@
+package com.beans2;
+
+public class LifeCycleBean {
+
+}

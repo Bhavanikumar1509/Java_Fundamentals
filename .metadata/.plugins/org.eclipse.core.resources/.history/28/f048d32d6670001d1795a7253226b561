@@ -1,0 +1,5 @@
+import com.beans.Car;
+import com.factory.CarFactory;
+public class CarTest {
+
+}

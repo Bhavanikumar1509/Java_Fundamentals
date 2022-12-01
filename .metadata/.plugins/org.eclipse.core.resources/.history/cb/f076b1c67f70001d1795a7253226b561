@@ -1,0 +1,7 @@
+package com.beans2;
+
+import org.springframework.beans.factory.config.BeanPostProcessor;
+
+public class UtilityBean implements BeanPostProcessor{
+
+}

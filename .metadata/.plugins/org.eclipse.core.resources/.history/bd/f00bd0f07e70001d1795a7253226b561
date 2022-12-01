@@ -1,0 +1,23 @@
+package com.beans2;
+
+import org.springframework.beans.BeansException;
+import org.springframework.beans.factory.BeanFactory;
+import org.springframework.beans.factory.BeanFactoryAware;
+import org.springframework.beans.factory.BeanNameAware;
+
+public class LifeCycleBean implements BeanNameAware,BeanFactoryAware {
+
+	@Override
+	public void setBeanFactory(BeanFactory beanFactory) throws BeansException {
+		// TODO Auto-generated method stub
+		this.bean
+		
+	}
+
+	@Override
+	public void setBeanName(String arg0) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

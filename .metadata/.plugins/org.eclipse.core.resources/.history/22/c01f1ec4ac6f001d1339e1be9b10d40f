@@ -1,0 +1,10 @@
+package com.beans;
+
+public class EmployeeApp {
+	public static void main(String[] args) {
+		Employee e1=new Employee(101,"johndoes");
+		System.out.println(e1.toString());
+		
+	}
+
+}

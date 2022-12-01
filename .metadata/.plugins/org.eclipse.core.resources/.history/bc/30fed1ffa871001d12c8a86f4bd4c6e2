@@ -1,0 +1,16 @@
+package run;
+
+import java.util.List;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.anno.beans.Customer;
+import com.anno.beans.CustomerDAO;
+
+public class CustomerRun {
+	public static void main(String[] args) {
+		ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
+		CustomerDAO customerDao = (CustomerDAO) context.getBean("customerDAOImple");
+	}
+}

@@ -1,0 +1,14 @@
+package com.beans2;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class MainRun {
+	public static void main(String[] args) {
+		ApplicationContext context=new ClassPathXmlApplicationContext("books.xml");
+		
+		LibraryList l1=(LibraryList)context.getBean("libraryList");
+		l1.displayBooks();
+	}
+
+}

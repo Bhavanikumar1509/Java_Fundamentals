@@ -1,0 +1,10 @@
+package com.beans;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+public class TestCustomer {
+	public static void main(String[] args) {
+		ApplicationContext contextt=new ClassPathXmlApplicationContext("beans.xml")
+		
+	}
+
+}

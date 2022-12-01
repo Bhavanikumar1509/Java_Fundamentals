@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+    <bean id="department" class="com.autowiring.beans.Department" autowire="byType">
+    
+    <property name="name" value="Nani"></property>
+    </bean>
+    <bean id="department1" class ="com.autowiring.beans.Department">
+    <property name="name" value="technology">
+    </property>
+    </bean>
+    <!-- primary attribute will make sure to use this bean when there are more mathes byType -->
+     <bean id="department2" class ="com.autowiring.beans.Department">
+    <property name="name" value="Development">
+    </property>
+    </bean>
+    <bean id="employee1" class="com.autowiring.beans.EmployeeBean" autowire="byType">
+    
+    <property name="name" value="Nani"></property>
+    </bean>
+    <bean id="employee2" class="com.autowiring.beans.EmployeeBean" autowire="byName">
+    
+    <property name="name" value="Nani"></property>
+    </bean>
+</beans>

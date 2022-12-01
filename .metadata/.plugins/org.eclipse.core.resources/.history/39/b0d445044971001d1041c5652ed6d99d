@@ -1,0 +1,11 @@
+package org.springframework.jdbc.core;
+
+import com.anno.beans.SqlRowSet;
+
+public @interface JdbcTemplate {
+
+	int update(String query, int customerId, int customerId2);
+
+	SQLRowSet queryForRowSet(String query);
+
+}

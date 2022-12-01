@@ -1,0 +1,8 @@
+package com.beans;
+
+public class Customer {
+
+	int custId;
+	String custName;
+	Address custAddress;
+}

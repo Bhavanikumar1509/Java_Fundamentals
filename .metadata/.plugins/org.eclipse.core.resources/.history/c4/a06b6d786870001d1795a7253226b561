@@ -1,0 +1,10 @@
+package com.beans;
+
+public class Address {
+	int addressid;
+	String areaName;
+	String cityName;
+	
+	
+
+}

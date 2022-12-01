@@ -1,0 +1,13 @@
+package com.anno.beans;
+
+public interface CustomerDAO {
+
+	int addCustomer(Customer c);
+
+	int deleteCustomer(int id);
+
+	void displayAllCustomer();
+
+	int updateCustomer(Customer c);
+
+}

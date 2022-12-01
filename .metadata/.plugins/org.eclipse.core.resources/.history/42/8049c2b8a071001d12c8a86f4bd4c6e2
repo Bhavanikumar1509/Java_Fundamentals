@@ -1,0 +1,10 @@
+package com.anno.beans;
+
+public interface CustomerDAO {
+	public static void main(String[] args) {
+		int addCustomer(Customer c);
+		
+	}
+
+	
+}

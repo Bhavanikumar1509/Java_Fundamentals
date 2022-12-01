@@ -1,0 +1,29 @@
+package com.anno.beans;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public class CustomerDAOImple implements CustomerDAO{
+	@Autowired
+	JdbcTemplate jdbcTemplate;
+	@Override
+	public int addCustomer(Customer c) {
+		// TODO Auto-generated method stub
+		int rows=0;
+		String query="insert into customer values(?,?)";
+		rows=jdbcTemplate.update(query,c.getCustomerId(),c.getCustomerName());
+		return rows;
+	}
+
+	@Override
+	public int deleteCustomer(int id) {
+		// TODO Auto-generated method stub
+		int rows=0;
+		String query="delete from customer where id=?";
+		rows=jdbcTemplate.update(query,id);
+		return rows;
+	}
+
+	@Override

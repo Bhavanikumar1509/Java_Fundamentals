@@ -1,0 +1,40 @@
+package com.beans2;
+
+public class book {
+	private String isbn;
+	private String bookname;
+	private int price;
+	public book() {
+		
+	}
+	public book(String isbn, String bookname, int price) {
+		super();
+		this.isbn = isbn;
+		this.bookname = bookname;
+		this.price = price;
+	}
+	public String getIsbn() {
+		return isbn;
+	}
+	public void setIsbn(String isbn) {
+		this.isbn = isbn;
+	}
+	public String getBookname() {
+		return bookname;
+	}
+	public void setBookname(String bookname) {
+		this.bookname = bookname;
+	}
+	public int getPrice() {
+		return price;
+	}
+	public void setPrice(int price) {
+		this.price = price;
+	}
+	@Override
+	public String toString() {
+		return "book [isbn=" + isbn + ", bookname=" + bookname + ", price=" + price + "]";
+	}
+	
+
+}

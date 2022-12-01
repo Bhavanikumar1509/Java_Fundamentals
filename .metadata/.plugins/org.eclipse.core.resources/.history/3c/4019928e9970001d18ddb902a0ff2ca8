@@ -1,0 +1,8 @@
+package com.autowiring.beans;
+
+public class EmployeeBean {
+	private String fullName;
+	private Department departmentbean;
+	
+
+}

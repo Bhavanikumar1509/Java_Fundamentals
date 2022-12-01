@@ -1,0 +1,5 @@
+package com.beans;
+import org.springframework.context.ApplicationContext;
+public class TestCustomer {
+
+}

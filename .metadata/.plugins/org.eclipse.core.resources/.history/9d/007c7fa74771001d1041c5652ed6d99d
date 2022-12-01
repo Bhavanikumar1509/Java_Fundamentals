@@ -1,0 +1,51 @@
+package com.anno.beans;
+
+import javax.sql.rowset.JdbcRowSet;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public class CustomerDAOImple implements CustomerDAO{
+	@Autowired
+	JdbcTemplate jdbcTemplate;
+	@Override
+	public int addCustomer(Customer c) {
+		// TODO Auto-generated method stub
+		int rows=0;
+		String query="insert into customer values(?,?)";
+		rows=jdbcTemplate.update(query,c.getCustomerId(),c.getCustomerId());
+		return rows;
+	}
+
+	@Override
+	public int deleteCustomer(int id) {
+		// TODO Auto-generated method stub
+		int rows=0;
+		String query="delete from customer where id=?";
+		rows=jdbcTemplate.update(query,id);
+		return rows;
+	}
+
+	@Override
+	public int updateCustomer(Customer c) {
+		// TODO Auto-generated method stub
+		int rows=0;
+		String query="update customer set name=? where id=?";
+		rows=jdbcTemplate.update(query,c.getCustomerName(),c.getCustomerId());
+		return rows;
+	}
+
+	@Override
+	public void displayAllCustomer() {
+		// TODO Auto-generated method stub
+		int rows=0;
+		String query="select * from customer";
+		SQLRowSet rs=jdbcTemplate.queryForRowSet(query);
+		while(rs.next()) {
+			System.out.println();
+		}
+	}
+
+}

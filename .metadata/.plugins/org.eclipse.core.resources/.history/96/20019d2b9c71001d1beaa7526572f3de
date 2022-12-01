@@ -1,0 +1,10 @@
+package org.springframework.jdbc.core;
+
+public class JdbcTemplate {
+
+	public int update(String query, int customerId, String customerName) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

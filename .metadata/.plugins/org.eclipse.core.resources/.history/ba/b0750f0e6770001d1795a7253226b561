@@ -1,0 +1,5 @@
+package com.factory;
+import com.beans.Car;
+public class CarFactory {
+
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+    
+    <!-- create bean of type customer -->
+    <bean id="c1" class ="com.beans.Customer">
+    <property name="custId" value="101"/>
+   	<property name="custName" value="Nani"/>
+    <property name="custAddress" ref="address1"/>
+    
+    </bean>
+    <!-- create bean of type address -->
+    <bean id="address1" class ="com.beans.Address" scope="prototype">
+    <property name="addressid" value="161"/>
+   	<property name="areaName" value="sai ram street"/>
+    <property name="cityName" value="Pileru"/>
+    
+    </bean>
+
+</beans> 
+
+       

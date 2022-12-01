@@ -1,0 +1,12 @@
+package com.beans2;
+
+import java.util.HashMap;
+
+public class Libraryhash {
+
+	private HashMap<String, Book>hm;
+
+	public Libraryhash() {
+	}
+	
+}
